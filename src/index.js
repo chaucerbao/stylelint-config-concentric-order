@@ -1,6 +1,15 @@
 module.exports = {
   plugins: ["stylelint-order"],
   rules: {
+    "order/declaration-block-order": [
+      "dollar-variables",
+      "custom-properties",
+      { type: "at-rule", name: "extend" },
+      { type: "at-rule", name: "include" },
+      "declarations",
+      "rules",
+      { type: "at-rule", name: "media" }
+    ],
     "order/declaration-block-properties-specified-order": [
       [
         "box-sizing",
