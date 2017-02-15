@@ -1,0 +1,25 @@
+{
+  "name": "stylelint-config-concentric-order",
+  "version": "0.1.0",
+  "description": "This Stylelint configuration validates the ordering of CSS properties according to Concentric CSS",
+  "main": "src/index.js",
+  "scripts": {
+    "pretty": "prettier --write 'src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaucerbao/stylelint-config-concentric-order.git"
+  },
+  "author": "Alvin Chan <no@email.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaucerbao/stylelint-config-concentric-order/issues"
+  },
+  "homepage": "https://github.com/chaucerbao/stylelint-config-concentric-order#readme",
+  "devDependencies": {
+    "prettier": "^0.17.1"
+  },
+  "dependencies": {
+    "stylelint-order": "^0.2.2"
+  }
+}
