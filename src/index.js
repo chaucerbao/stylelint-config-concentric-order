@@ -175,7 +175,7 @@ const groups = [
 module.exports = {
   plugins: ["stylelint-order"],
   rules: {
-    "order/declaration-block-order": [
+    "order/order": [
       "dollar-variables",
       "custom-properties",
       { type: "at-rule", name: "extend" },
@@ -184,8 +184,13 @@ module.exports = {
       "rules",
       { type: "at-rule", name: "media", hasBlock: true }
     ],
-    "order/declaration-block-property-groups-structure": groups.map(group => ({
-      properties: group
-    }))
+    "order/properties-order": [
+      groups.map(group => ({
+        properties: group
+      })),
+      {
+        unspecified: "bottomAlphabetical"
+      }
+    ]
   }
 };
