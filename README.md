@@ -1,6 +1,6 @@
 # stylelint-config-concentric-order
-This [stylelint] configuration validates the order of CSS properties according to [Concentric CSS]. It's highly recommended that you use this **in addition to** your own rules (or rules from another shareable configuration), since it is only concerned with one thing.
-Additionally, this configuration also works with [stylefmt] to automatically sort your CSS properties.
+This [stylelint] configuration validates the order of CSS properties according to [Concentric CSS]. It's highly recommended that you use this **in addition to** your own rules (or rules from a shareable configuration), since it is only concerned with ordering.
+The configuration works with both `stylelint --fix` and [stylefmt] to automatically sort your CSS properties.
 
 ## Installation
 ```sh
