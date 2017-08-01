@@ -177,6 +177,7 @@ module.exports = {
   rules: {
     "order/order": [
       "dollar-variables",
+      "at-variables",
       "custom-properties",
       { type: "at-rule", name: "extend" },
       { type: "at-rule", name: "include" },
