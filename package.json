@@ -1,27 +1,26 @@
 {
   "name": "stylelint-config-concentric-order",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "This Stylelint configuration validates the ordering of CSS properties according to Concentric CSS",
+  "author": "Alvin Chan <no@email.com>",
+  "license": "ISC",
   "keywords": [
     "stylelint",
     "stylelint-config",
     "concentric"
   ],
   "main": "src/index.js",
-  "scripts": {
-    "test": "node_modules/.bin/ava",
-    "pretty": "node_modules/.bin/prettier --write 'src/**/*.js' 'test/**/*.js'"
-  },
+  "homepage": "https://github.com/chaucerbao/stylelint-config-concentric-order#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/chaucerbao/stylelint-config-concentric-order"
   },
-  "author": "Alvin Chan <no@email.com>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/chaucerbao/stylelint-config-concentric-order/issues"
   },
-  "homepage": "https://github.com/chaucerbao/stylelint-config-concentric-order#readme",
+  "files": [
+    "src/index.js"
+  ],
   "devDependencies": {
     "ava": "^0.21.0",
     "prettier": "^1.5.3",
@@ -29,5 +28,9 @@
   },
   "dependencies": {
     "stylelint-order": "^0.6.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/ava",
+    "pretty": "node_modules/.bin/prettier --write 'src/**/*.js' 'test/**/*.js'"
   }
 }
