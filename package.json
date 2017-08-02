@@ -9,7 +9,8 @@
   ],
   "main": "src/index.js",
   "scripts": {
-    "pretty": "prettier --write 'src/**/*.js'"
+    "test": "node_modules/.bin/ava",
+    "pretty": "node_modules/.bin/prettier --write 'src/**/*.js' 'test/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,9 @@
   },
   "homepage": "https://github.com/chaucerbao/stylelint-config-concentric-order#readme",
   "devDependencies": {
-    "prettier": "^1.5.3"
+    "ava": "^0.21.0",
+    "prettier": "^1.5.3",
+    "stylelint": "^8.0.0"
   },
   "dependencies": {
     "stylelint-order": "^0.6.0"
