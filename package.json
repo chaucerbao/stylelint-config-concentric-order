@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-concentric-order",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "This Stylelint configuration validates the ordering of CSS properties according to Concentric CSS",
   "author": "Alvin Chan <no@email.com>",
   "license": "ISC",
@@ -22,12 +22,12 @@
     "src/index.js"
   ],
   "devDependencies": {
-    "ava": "^0.21.0",
-    "prettier": "^1.5.3",
-    "stylelint": "^8.0.0"
+    "ava": "^0.22.0",
+    "prettier": "^1.7.4",
+    "stylelint": "^8.1.1"
   },
   "dependencies": {
-    "stylelint-order": "^0.6.0"
+    "stylelint-order": "^0.7.0"
   },
   "scripts": {
     "test": "node_modules/.bin/ava",
