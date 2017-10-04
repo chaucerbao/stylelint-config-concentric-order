@@ -182,6 +182,7 @@ module.exports = {
       { type: "at-rule", name: "include" },
       "declarations",
       "rules",
+      { type: "at-rule", name: "include", parameter: "breakpoint", hasBlock: true },
       { type: "at-rule", name: "media", hasBlock: true }
     ],
     "order/properties-order": [

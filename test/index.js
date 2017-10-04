@@ -20,6 +20,10 @@ body {
   background: $color;
   border-radius: 2px;
   box-sizing: border-box;
+  @include breakpoint(small) {
+    width: 50%;
+    margin: 10px;
+  }
   display: flex;
   height: 80%;
   left: 0;
@@ -47,6 +51,10 @@ body {
   p {
     color: var(--secondary-color);
     font-weight: bold;
+  }
+  @include breakpoint(small) {
+    margin: 10px;
+    width: 50%;
   }
   @media (min-width: 768px) {
     border: black solid 1px;
