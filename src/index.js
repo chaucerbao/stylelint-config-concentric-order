@@ -180,9 +180,13 @@ module.exports = {
       "custom-properties",
       { type: "at-rule", name: "extend" },
       { type: "at-rule", name: "include" },
+      { type: "at-rule", name: "mixin" },
+      { type: "at-rule", name: "add-mixin" },
       "declarations",
       "rules",
       { type: "at-rule", name: "include", parameter: "breakpoint", hasBlock: true },
+      { type: "at-rule", name: "mixin", parameter: "breakpoint", hasBlock: true },
+      { type: "at-rule", name: "add-mixin", parameter: "breakpoint", hasBlock: true },
       { type: "at-rule", name: "media", hasBlock: true }
     ],
     "order/properties-order": [

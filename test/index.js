@@ -13,12 +13,17 @@ body {
     border-bottom-width: 0;
     border: black solid 1px;
   }
+  @mixin postcssMixin(4, 5, 6);
   @include mixin(1, 2, 3);
   @extend .class;
   --secondary-color: black;
   $color: white;
   background: $color;
   border-radius: 2px;
+  @mixin breakpoint-up(small) {
+    color: green;
+    width: 60%;
+  }
   box-sizing: border-box;
   @include breakpoint(small) {
     width: 50%;
@@ -39,6 +44,7 @@ body {
   --secondary-color: black;
   @extend .class;
   @include mixin(1, 2, 3);
+  @mixin postcssMixin(4, 5, 6);
   box-sizing: border-box;
   display: flex;
   position: absolute;
@@ -55,6 +61,10 @@ body {
   @include breakpoint(small) {
     margin: 10px;
     width: 50%;
+  }
+  @mixin breakpoint-up(small) {
+    width: 60%;
+    color: green;
   }
   @media (min-width: 768px) {
     border: black solid 1px;
