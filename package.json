@@ -7,7 +7,9 @@
   "keywords": [
     "stylelint",
     "stylelint-config",
-    "concentric"
+    "concentric",
+    "order",
+    "sort"
   ],
   "main": "src/index.js",
   "homepage": "https://github.com/chaucerbao/stylelint-config-concentric-order#readme",
@@ -21,8 +23,20 @@
   "files": [
     "src/index.js"
   ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "ava": "^0.22.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.3",
     "prettier": "^1.7.4",
     "stylelint": "^8.1.1"
   },
@@ -30,7 +44,7 @@
     "stylelint-order": "^0.7.0"
   },
   "scripts": {
-    "test": "node_modules/.bin/ava",
-    "pretty": "node_modules/.bin/prettier --write 'src/**/*.js' 'test/**/*.js'"
+    "test": "ava",
+    "precommit": "lint-staged"
   }
 }
