@@ -207,10 +207,7 @@ module.exports = {
     'order/properties-order': [
       groups.map(group => ({
         properties: group
-      })),
-      {
-        unspecified: 'bottomAlphabetical'
-      }
+      }))
     ]
   }
 }
