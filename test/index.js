@@ -1,6 +1,6 @@
-import test from "ava";
-import path from "path";
-import stylelint from "stylelint";
+import test from 'ava'
+import path from 'path'
+import stylelint from 'stylelint'
 
 const input = `
 body {
@@ -14,6 +14,10 @@ body {
     border: black solid 1px;
   }
   @mixin postcssMixin(4, 5, 6);
+  span {
+    grid: auto / 100px auto 100px;
+    display: grid;
+  }
   @include mixin(1, 2, 3);
   @extend .class;
   --secondary-color: black;
@@ -36,7 +40,7 @@ body {
   position: absolute;
   top: 0;
 }
-`;
+`
 
 const expected = `
 body {
@@ -58,6 +62,10 @@ body {
     color: var(--secondary-color);
     font-weight: bold;
   }
+  span {
+    display: grid;
+    grid: auto / 100px auto 100px;
+  }
   @include breakpoint(small) {
     margin: 10px;
     width: 50%;
@@ -72,17 +80,17 @@ body {
     text-align: center;
   }
 }
-`;
+`
 
-test("stylelint --fix", async t => {
+test('stylelint --fix', async t => {
   const data = await stylelint.lint({
     code: input,
-    syntax: "scss",
+    syntax: 'scss',
     config: {
-      extends: path.resolve("src", "index.js")
+      extends: path.resolve('src', 'index.js')
     },
     fix: true
-  });
+  })
 
-  t.is(data.results[0]._postcssResult.root.toString(), expected);
-});
+  t.is(data.results[0]._postcssResult.root.toString(), expected)
+})
