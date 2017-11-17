@@ -199,6 +199,7 @@ module.exports = {
     'order/order': [
       'dollar-variables',
       'custom-properties',
+      { type: 'at-rule', name: 'import' },
       { type: 'at-rule', name: 'extend' },
       { type: 'at-rule', name: 'include' },
       { type: 'at-rule', name: 'mixin' },
