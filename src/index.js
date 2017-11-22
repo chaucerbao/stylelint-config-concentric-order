@@ -197,6 +197,7 @@ module.exports = {
   plugins: ['stylelint-order'],
   rules: {
     'order/order': [
+      { type: 'at-rule', name: 'import' },
       'dollar-variables',
       'custom-properties',
       { type: 'at-rule', name: 'extend' },
