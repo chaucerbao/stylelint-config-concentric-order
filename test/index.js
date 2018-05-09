@@ -13,6 +13,7 @@ body {
     border-bottom-width: 0;
     border: black solid 1px;
   }
+  will-change: transform;
   @mixin postcssMixin(4, 5, 6);
   span {
     grid: auto / 100px auto 100px;
@@ -58,6 +59,7 @@ body {
   background: $color;
   height: 80%;
   min-height: 100vh;
+  will-change: transform;
   p {
     color: var(--secondary-color);
     font-weight: bold;

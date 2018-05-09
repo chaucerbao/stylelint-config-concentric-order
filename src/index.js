@@ -189,7 +189,8 @@ const groups = [
   ],
   ['content', 'quotes'],
   ['counter-reset', 'counter-increment'],
-  ['page-break-before', 'page-break-after', 'page-break-inside']
+  ['page-break-before', 'page-break-after', 'page-break-inside'],
+  ['will-change']
 ]
 
 // Export the Stylelint configuration
