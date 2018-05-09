@@ -34,14 +34,14 @@
     ]
   },
   "devDependencies": {
-    "ava": "^0.23.0",
+    "ava": "^0.25.0",
     "husky": "^0.14.3",
-    "lint-staged": "^5.0.0",
-    "prettier": "^1.8.2",
-    "stylelint": "^8.2.0"
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.12.1",
+    "stylelint": "^9.2.0"
   },
   "dependencies": {
-    "stylelint-order": "^0.7.0"
+    "stylelint-order": "^0.8.1"
   },
   "scripts": {
     "test": "ava",
