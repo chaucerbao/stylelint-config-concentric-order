@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-concentric-order",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "description": "This Stylelint configuration validates the ordering of CSS properties according to Concentric CSS",
   "author": "Alvin Chan <no@email.com>",
   "license": "ISC",

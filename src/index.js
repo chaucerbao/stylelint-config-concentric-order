@@ -1,6 +1,6 @@
 // Groups of CSS properties in Concentric order
 const groups = [
-  ['all'],
+  ['all', 'appearance'],
   ['box-sizing'],
   ['display', 'position', 'top', 'right', 'bottom', 'left'],
   ['float', 'clear'],
@@ -190,7 +190,7 @@ const groups = [
   ['content', 'quotes'],
   ['counter-reset', 'counter-increment'],
   ['page-break-before', 'page-break-after', 'page-break-inside'],
-  ['will-change']
+  ['pointer-events', 'will-change']
 ]
 
 // Export the Stylelint configuration

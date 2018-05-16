@@ -11,11 +11,13 @@ body {
   @media (min-width: 768px) {
     text-align: center;
     border-bottom-width: 0;
+    appearance: unset;
     border: black solid 1px;
   }
   will-change: transform;
   @mixin postcssMixin(4, 5, 6);
   span {
+    pointer-events: none;
     grid: auto / 100px auto 100px;
     display: grid;
   }
@@ -67,6 +69,7 @@ body {
   span {
     display: grid;
     grid: auto / 100px auto 100px;
+    pointer-events: none;
   }
   @include breakpoint(small) {
     margin: 10px;
@@ -77,6 +80,7 @@ body {
     color: green;
   }
   @media (min-width: 768px) {
+    appearance: unset;
     border: black solid 1px;
     border-bottom-width: 0;
     text-align: center;
