@@ -63,7 +63,7 @@ const groups = [
     'transition-property',
     'transition-timing-function'
   ],
-  ['visibility', 'opacity', 'z-index'],
+  ['visibility', 'opacity', 'mix-blend-mode', 'isolation', 'z-index'],
   ['margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left'],
   [
     'outline',
@@ -123,7 +123,8 @@ const groups = [
     'background-origin',
     'background-position',
     'background-repeat',
-    'background-size'
+    'background-size',
+    'background-blend-mode'
   ],
   ['cursor'],
   ['padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left'],

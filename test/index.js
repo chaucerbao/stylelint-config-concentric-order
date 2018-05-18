@@ -8,6 +8,7 @@ body {
     font-weight: bold;
     color: var(--secondary-color);
   }
+  opacity: 0.9;
   @media (min-width: 768px) {
     text-align: center;
     border-bottom-width: 0;
@@ -22,9 +23,11 @@ body {
     display: grid;
   }
   @include mixin(1, 2, 3);
+  isolation: isolate;
   @extend .class;
   --secondary-color: black;
   $color: white;
+  background-blend-mode: multiply;
   background: $color;
   border-radius: 2px;
   @mixin breakpoint-up(small) {
@@ -38,6 +41,7 @@ body {
   }
   display: flex;
   height: 80%;
+  mix-blend-mode: difference;
   left: 0;
   min-height: 100vh;
   position: absolute;
@@ -57,8 +61,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0.9;
+  mix-blend-mode: difference;
+  isolation: isolate;
   border-radius: 2px;
   background: $color;
+  background-blend-mode: multiply;
   height: 80%;
   min-height: 100vh;
   will-change: transform;
