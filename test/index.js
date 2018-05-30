@@ -5,7 +5,8 @@ import stylelint from 'stylelint'
 const input = `
 body {
   p {
-    font-weight: bold;
+    font-kerning: normal;
+    font-family: serif;
     color: var(--secondary-color);
   }
   opacity: 0.9;
@@ -72,7 +73,8 @@ body {
   will-change: transform;
   p {
     color: var(--secondary-color);
-    font-weight: bold;
+    font-family: serif;
+    font-kerning: normal;
   }
   span {
     display: grid;

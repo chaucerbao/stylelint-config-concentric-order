@@ -179,6 +179,7 @@ const groups = [
   [
     'font',
     'font-family',
+    'font-kerning',
     'font-size',
     'font-size-adjust',
     'font-stretch',
