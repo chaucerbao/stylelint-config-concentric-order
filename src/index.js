@@ -215,7 +215,7 @@ module.exports = {
       { type: 'at-rule', name: 'mixin' },
       { type: 'at-rule', name: 'add-mixin' },
 
-      // Declarations and Nested Rules
+      // Declarations
       'declarations',
 
       // Pseudo-elements
