@@ -200,15 +200,42 @@ module.exports = {
   plugins: ['stylelint-order'],
   rules: {
     'order/order': [
+      // Imports
       { type: 'at-rule', name: 'import' },
+
+      // Variables
       'dollar-variables',
       'custom-properties',
+
+      // Inheritance
       { type: 'at-rule', name: 'extend' },
+
+      // Mixins
       { type: 'at-rule', name: 'include' },
       { type: 'at-rule', name: 'mixin' },
       { type: 'at-rule', name: 'add-mixin' },
+
+      // Declarations and Nested Rules
       'declarations',
+
+      // Pseudo-elements
+      {
+        type: 'rule',
+        selector: /^&::[\w-]+/,
+        hasBlock: true
+      },
+
+      // Pseudo-classes
+      {
+        type: 'rule',
+        selector: /^&:[\w-]+/,
+        hasBlock: true
+      },
+
+      // Nested Rules
       'rules',
+
+      // Breakpoint Mixins
       {
         type: 'at-rule',
         name: 'include',
@@ -227,6 +254,8 @@ module.exports = {
         parameter: 'breakpoint',
         hasBlock: true
       },
+
+      // Media Queries
       { type: 'at-rule', name: 'media', hasBlock: true }
     ],
     'order/properties-order': [

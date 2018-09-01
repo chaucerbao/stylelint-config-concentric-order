@@ -19,7 +19,14 @@ body {
   will-change: transform;
   @mixin postcssMixin(4, 5, 6);
   span {
+    &:hover {
+      color: $color;
+    }
     pointer-events: none;
+    &::after {
+      margin: 5px;
+      display: block;
+    }
     grid: auto / 100px auto 100px;
     display: grid;
   }
@@ -80,6 +87,13 @@ body {
     display: grid;
     grid: auto / 100px auto 100px;
     pointer-events: none;
+    &::after {
+      display: block;
+      margin: 5px;
+    }
+    &:hover {
+      color: $color;
+    }
   }
   @include breakpoint(small) {
     margin: 10px;
