@@ -19,6 +19,9 @@ body {
   will-change: transform;
   @mixin postcssMixin(4, 5, 6);
   span {
+    @include media-breakpoint-up(md) {
+      padding: 2px;
+    }
     &:hover {
       color: $color;
     }
@@ -93,6 +96,9 @@ body {
     }
     &:hover {
       color: $color;
+    }
+    @include media-breakpoint-up(md) {
+      padding: 2px;
     }
   }
   @include breakpoint(small) {

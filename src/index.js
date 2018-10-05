@@ -239,19 +239,19 @@ module.exports = {
       {
         type: 'at-rule',
         name: 'include',
-        parameter: 'breakpoint',
+        parameter: /breakpoints?/i,
         hasBlock: true
       },
       {
         type: 'at-rule',
         name: 'mixin',
-        parameter: 'breakpoint',
+        parameter: /breakpoints?/i,
         hasBlock: true
       },
       {
         type: 'at-rule',
         name: 'add-mixin',
-        parameter: 'breakpoint',
+        parameter: /breakpoints?/i,
         hasBlock: true
       },
 
