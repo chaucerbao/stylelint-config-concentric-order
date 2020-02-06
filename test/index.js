@@ -1,6 +1,6 @@
-import test from 'ava'
-import path from 'path'
-import stylelint from 'stylelint'
+const test = require('ava')
+const path = require('path')
+const stylelint = require('stylelint')
 
 const input = `
 body {
