@@ -214,6 +214,7 @@ module.exports = {
       { type: 'at-rule', name: 'include' },
       { type: 'at-rule', name: 'mixin' },
       { type: 'at-rule', name: 'add-mixin' },
+      { type: 'at-rule', name: 'apply' },
 
       // Declarations
       'declarations',

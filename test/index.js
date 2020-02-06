@@ -54,6 +54,7 @@ body {
   height: 80%;
   mix-blend-mode: difference;
   left: 0;
+  @apply tailwind underline;
   min-height: 100vh;
   position: absolute;
   top: 0;
@@ -67,6 +68,7 @@ body {
   @extend .class;
   @include mixin(1, 2, 3);
   @mixin postcssMixin(4, 5, 6);
+  @apply tailwind underline;
   box-sizing: border-box;
   display: flex;
   position: absolute;
