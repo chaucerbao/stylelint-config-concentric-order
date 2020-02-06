@@ -46,6 +46,7 @@ body {
     width: 60%;
   }
   box-sizing: border-box;
+  background-image: url('//picsum.photos/200/300');
   @include breakpoint(small) {
     width: 50%;
     margin: 10px;
@@ -75,10 +76,11 @@ body {
   top: 0;
   left: 0;
   opacity: 0.9;
-  mix-blend-mode: difference;
-  isolation: isolate;
   border-radius: 2px;
+  isolation: isolate;
+  mix-blend-mode: difference;
   background: $color;
+  background-image: url('//picsum.photos/200/300');
   background-blend-mode: multiply;
   height: 80%;
   min-height: 100vh;

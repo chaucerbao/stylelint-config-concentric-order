@@ -63,7 +63,7 @@ const groups = [
     'transition-property',
     'transition-timing-function'
   ],
-  ['visibility', 'opacity', 'mix-blend-mode', 'isolation', 'z-index'],
+  ['visibility', 'opacity', 'z-index'],
   ['margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left'],
   [
     'outline',
@@ -114,17 +114,18 @@ const groups = [
     'border-image-slice'
   ],
   ['box-shadow'],
+  ['isolation', 'mix-blend-mode'],
   [
     'background',
     'background-attachment',
     'background-clip',
     'background-color',
     'background-image',
+    'background-blend-mode',
     'background-origin',
     'background-position',
     'background-repeat',
-    'background-size',
-    'background-blend-mode'
+    'background-size'
   ],
   ['cursor'],
   ['padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left'],
