@@ -29,6 +29,7 @@ const groups = [
     'grid-auto-rows',
     'grid-auto-columns',
     'grid-auto-flow',
+    'gap',
     'grid-gap',
     'grid-row-gap',
     'grid-column-gap'
