@@ -122,14 +122,13 @@ body {
 }
 `
 
-test('stylelint --fix', async t => {
+test('stylelint --fix', async (t) => {
   const data = await stylelint.lint({
     code: input,
-    syntax: 'scss',
     config: {
-      extends: path.resolve('src', 'index.js')
+      extends: path.resolve('src', 'index.js'),
     },
-    fix: true
+    fix: true,
   })
 
   t.is(data.results[0]._postcssResult.root.toString(), expected)
