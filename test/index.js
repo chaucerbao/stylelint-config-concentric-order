@@ -59,6 +59,71 @@ body {
   min-height: 100vh;
   position: absolute;
   top: 0;
+  .logical {
+    padding-block-end: 33px;
+    margin-inline-end: 26px;
+    min-block-size: 43px;
+    max-inline-size: 55px;
+    inset-inline-end: 15px;
+    margin-block-end: 23px;
+    inline-size: 51px;
+    max-height: 54px;
+    block-size: 41px;
+    inset: 0;
+    max-block-size: 45px;
+    min-height: 52px;
+    min-width: 42px;
+    margin-inline: 24px;
+    padding-inline-end: 36px;
+    max-width: 44px;
+    margin-block: 21px;
+    padding-block: 31px;
+    margin-block-start: 22px;
+    height: 50px;
+    inset-inline: 13px;
+    inset-block: 10px;
+    padding-block-start: 32px;
+    inset-inline-start: 14px;
+    padding-inline-start: 35px;
+    min-inline-size: 53px;
+    margin-inline-start: 25px;
+    inset-block-start: 11px;
+    padding-inline: 34px;
+    width: 40px;
+    inset-block-end: 12px;
+  }
+  .logical-border {
+    border-inline-color: #000040;
+    border-block-style: solid;
+    border-inline-style: solid;
+    border-block-end-style: solid;
+    border-inline-start-width: 50px;
+    border-radius: 0;
+    border-end-start-radius: 3px;
+    border-block-end-width: 30px;
+    border-start-end-radius: 2px;
+    border-end-end-radius: 4px;
+    border-inline-start-style: solid;
+    border-start-start-radius: 1px;
+    border-inline-start-color: #000050;
+    border-block-end: 30px solid black;
+    border-inline: 40px solid black;
+    border-inline-end: 60px solid black;
+    border-block: 10px solid black;
+    border-inline-end-style: solid;
+    border-block-start-color: #000020;
+    border-inline-end-color: #000060;
+    border-block-end-color: #000030;
+    border-block-color: #000010;
+    border-inline-end-width: 60px;
+    border: 0;
+    border-inline-start: 50px solid black;
+    border-block-start: 20px solid black;
+    border-block-start-width: 20px;
+    border-inline-width: 40px;
+    border-block-width: 10px;
+    border-block-start-style: solid;
+  }
 }
 `
 
@@ -104,6 +169,71 @@ body {
     @include media-breakpoint-up(md) {
       padding: 2px;
     }
+  }
+  .logical {
+    inset: 0;
+    inset-block: 10px;
+    inset-block-start: 11px;
+    inset-block-end: 12px;
+    inset-inline: 13px;
+    inset-inline-start: 14px;
+    inset-inline-end: 15px;
+    margin-block: 21px;
+    margin-block-start: 22px;
+    margin-block-end: 23px;
+    margin-inline: 24px;
+    margin-inline-start: 25px;
+    margin-inline-end: 26px;
+    padding-block: 31px;
+    padding-block-start: 32px;
+    padding-block-end: 33px;
+    padding-inline: 34px;
+    padding-inline-start: 35px;
+    padding-inline-end: 36px;
+    width: 40px;
+    block-size: 41px;
+    min-width: 42px;
+    min-block-size: 43px;
+    max-width: 44px;
+    max-block-size: 45px;
+    height: 50px;
+    inline-size: 51px;
+    min-height: 52px;
+    min-inline-size: 53px;
+    max-height: 54px;
+    max-inline-size: 55px;
+  }
+  .logical-border {
+    border: 0;
+    border-block: 10px solid black;
+    border-block-width: 10px;
+    border-block-style: solid;
+    border-block-color: #000010;
+    border-block-start: 20px solid black;
+    border-block-start-width: 20px;
+    border-block-start-style: solid;
+    border-block-start-color: #000020;
+    border-block-end: 30px solid black;
+    border-block-end-width: 30px;
+    border-block-end-style: solid;
+    border-block-end-color: #000030;
+    border-inline: 40px solid black;
+    border-inline-width: 40px;
+    border-inline-style: solid;
+    border-inline-color: #000040;
+    border-inline-start: 50px solid black;
+    border-inline-start-width: 50px;
+    border-inline-start-style: solid;
+    border-inline-start-color: #000050;
+    border-inline-end: 60px solid black;
+    border-inline-end-width: 60px;
+    border-inline-end-style: solid;
+    border-inline-end-color: #000060;
+    border-radius: 0;
+    border-start-start-radius: 1px;
+    border-start-end-radius: 2px;
+    border-end-start-radius: 3px;
+    border-end-end-radius: 4px;
   }
   @include breakpoint(small) {
     margin: 10px;
