@@ -43,17 +43,21 @@ const groups = [
     'grid-auto-rows',
     'grid-auto-columns',
     'grid-auto-flow',
+  ],
+  [
     'gap',
     'grid-gap',
+    'row-gap',
     'grid-row-gap',
+    'column-gap',
     'grid-column-gap'
   ],
+  ['place-content', 'place-items', 'place-self'],
   ['align-content', 'align-items', 'align-self'],
   ['justify-content', 'justify-items', 'justify-self'],
   ['order'],
   [
     'columns',
-    'column-gap',
     'column-fill',
     'column-rule',
     'column-rule-width',

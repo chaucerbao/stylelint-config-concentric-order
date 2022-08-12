@@ -4,18 +4,21 @@ const stylelint = require('stylelint')
 
 const input = `
 body {
+  gap: 1em;
   p {
     font-kerning: normal;
     font-family: serif;
     color: var(--secondary-color);
   }
   opacity: 0.9;
+  column-gap: .5rem;
   @media (min-width: 768px) {
     text-align: center;
     border-bottom-width: 0;
     appearance: unset;
     border: black solid 1px;
   }
+  grid-gap: 1em;
   will-change: transform;
   @mixin postcssMixin(4, 5, 6);
   span {
@@ -34,17 +37,21 @@ body {
     display: grid;
   }
   @include mixin(1, 2, 3);
+  place-content: start;
   isolation: isolate;
   @extend .class;
+  row-gap: 10px;
   --secondary-color: black;
   $color: white;
   background-blend-mode: multiply;
+  grid-row-gap: 10px;
   background: $color;
   border-radius: 2px;
   @mixin breakpoint-up(small) {
     color: green;
     width: 60%;
   }
+  place-self: end;
   box-sizing: border-box;
   background-image: url('//picsum.photos/200/300');
   @include breakpoint(small) {
@@ -92,6 +99,8 @@ body {
     width: 40px;
     inset-block-end: 12px;
   }
+  place-items: center;
+  grid-column-gap: .5rem;
   .logical-border {
     border-inline-color: #000040;
     border-block-style: solid;
@@ -140,6 +149,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  gap: 1em;
+  grid-gap: 1em;
+  row-gap: 10px;
+  grid-row-gap: 10px;
+  column-gap: .5rem;
+  grid-column-gap: .5rem;
+  place-content: start;
+  place-items: center;
+  place-self: end;
   opacity: 0.9;
   border-radius: 2px;
   isolation: isolate;
