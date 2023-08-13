@@ -25,7 +25,7 @@ const groups = [
     'flex-flow',
     'flex-grow',
     'flex-shrink',
-    'flex-wrap'
+    'flex-wrap',
   ],
   [
     'grid',
@@ -50,7 +50,7 @@ const groups = [
     'row-gap',
     'grid-row-gap',
     'column-gap',
-    'grid-column-gap'
+    'grid-column-gap',
   ],
   ['place-content', 'place-items', 'place-self'],
   ['align-content', 'align-items', 'align-self'],
@@ -65,7 +65,7 @@ const groups = [
     'column-rule-color',
     'column-span',
     'column-count',
-    'column-width'
+    'column-width',
   ],
   [
     'backface-visibility',
@@ -73,14 +73,14 @@ const groups = [
     'perspective-origin',
     'transform',
     'transform-origin',
-    'transform-style'
+    'transform-style',
   ],
   [
     'transition',
     'transition-delay',
     'transition-duration',
     'transition-property',
-    'transition-timing-function'
+    'transition-timing-function',
   ],
   ['visibility', 'opacity', 'z-index'],
   [
@@ -101,7 +101,7 @@ const groups = [
     'outline-offset',
     'outline-width',
     'outline-style',
-    'outline-color'
+    'outline-color',
   ],
   [
     'border',
@@ -113,7 +113,7 @@ const groups = [
     'border-top-width',
     'border-right-width',
     'border-bottom-width',
-    'border-left-width'
+    'border-left-width',
   ],
   [
     'border-block',
@@ -148,7 +148,7 @@ const groups = [
     'border-top-style',
     'border-right-style',
     'border-bottom-style',
-    'border-left-style'
+    'border-left-style',
   ],
   [
     'border-radius',
@@ -166,7 +166,7 @@ const groups = [
     'border-top-color',
     'border-right-color',
     'border-bottom-color',
-    'border-left-color'
+    'border-left-color',
   ],
   [
     'border-image',
@@ -174,7 +174,7 @@ const groups = [
     'border-image-width',
     'border-image-outset',
     'border-image-repeat',
-    'border-image-slice'
+    'border-image-slice',
   ],
   ['box-shadow'],
   ['isolation', 'mix-blend-mode'],
@@ -188,7 +188,7 @@ const groups = [
     'background-origin',
     'background-position',
     'background-repeat',
-    'background-size'
+    'background-size',
   ],
   ['cursor'],
   [
@@ -226,7 +226,7 @@ const groups = [
     'list-style-type',
     'list-style-position',
     'list-style-image',
-    'caption-side'
+    'caption-side',
   ],
   ['table-layout', 'border-collapse', 'border-spacing', 'empty-cells'],
   [
@@ -238,7 +238,7 @@ const groups = [
     'animation-iteration-count',
     'animation-direction',
     'animation-fill-mode',
-    'animation-play-state'
+    'animation-play-state',
   ],
   ['vertical-align'],
   [
@@ -255,7 +255,7 @@ const groups = [
     'text-decoration-style',
     'text-rendering',
     'text-shadow',
-    'text-overflow'
+    'text-overflow',
   ],
   [
     'line-height',
@@ -264,7 +264,7 @@ const groups = [
     'white-space',
     'word-break',
     'word-wrap',
-    'color'
+    'color',
   ],
   [
     'font',
@@ -277,12 +277,12 @@ const groups = [
     'font-smoothing',
     'osx-font-smoothing',
     'font-variant',
-    'font-style'
+    'font-style',
   ],
   ['content', 'quotes'],
   ['counter-reset', 'counter-increment'],
   ['page-break-before', 'page-break-after', 'page-break-inside'],
-  ['pointer-events', 'will-change']
+  ['pointer-events', 'will-change'],
 ]
 
 // Export the Stylelint configuration
@@ -313,14 +313,14 @@ module.exports = {
       {
         type: 'rule',
         selector: /^&::[\w-]+/,
-        hasBlock: true
+        hasBlock: true,
       },
 
       // Pseudo-classes
       {
         type: 'rule',
         selector: /^&:[\w-]+/,
-        hasBlock: true
+        hasBlock: true,
       },
 
       // Nested Rules
@@ -331,28 +331,28 @@ module.exports = {
         type: 'at-rule',
         name: 'include',
         parameter: /breakpoints?/i,
-        hasBlock: true
+        hasBlock: true,
       },
       {
         type: 'at-rule',
         name: 'mixin',
         parameter: /breakpoints?/i,
-        hasBlock: true
+        hasBlock: true,
       },
       {
         type: 'at-rule',
         name: 'add-mixin',
         parameter: /breakpoints?/i,
-        hasBlock: true
+        hasBlock: true,
       },
 
       // Media Queries
-      { type: 'at-rule', name: 'media', hasBlock: true }
+      { type: 'at-rule', name: 'media', hasBlock: true },
     ],
     'order/properties-order': [
-      groups.map(group => ({
-        properties: group
-      }))
-    ]
-  }
+      groups.map((group) => ({
+        properties: group,
+      })),
+    ],
+  },
 }
