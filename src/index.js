@@ -5,10 +5,6 @@ const groups = [
   [
     'display',
     'position',
-    'top',
-    'right',
-    'bottom',
-    'left',
     'inset',
     'inset-block',
     'inset-block-start',
@@ -16,6 +12,10 @@ const groups = [
     'inset-inline',
     'inset-inline-start',
     'inset-inline-end',
+    'top',
+    'right',
+    'bottom',
+    'left',
   ],
   ['float', 'clear'],
   [
