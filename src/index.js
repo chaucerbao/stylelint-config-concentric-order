@@ -344,6 +344,7 @@ const groups = [
     'font-optical-sizing',
     'font-palette',
     'font-synthesis',
+    'font-display',
   ],
   ['content', 'quotes'],
   ['counter-reset', 'counter-increment', 'counter-set'],
